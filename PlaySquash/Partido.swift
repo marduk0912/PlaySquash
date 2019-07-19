@@ -47,17 +47,15 @@ class Partido: UIViewController {
     
     
     @IBAction func puntajeJugador1(_ sender: UIButton) {
+        
         puntosPlayerOne += 1
-        if puntosPlayerOne < 11 && puntosPlayerTwo <= 9 {
-            puntosString1 = String(puntosPlayerOne)
-            nombreJugador1.text = puntosString1
-        }else {
-            puntosString1 = String(puntosPlayerOne)
-            nombreJugador1.text = puntosString1
-            resultadoGame.text = "El ganador es \(nombreUno)"
-            botonJugador1.isEnabled = false
-            botonJugador2.isEnabled = false
-        }
+        nombreJugador1.text = sumaDePuntos(puntosPlayerOne: puntosPlayerOne, puntosPlayerTwo: puntosPlayerTwo)
+        
+        resultadoGame.text = ganadorDelPartido(puntosPlayerOne: puntosPlayerOne, puntosPlayerTwo: puntosPlayerTwo, nombre: nombreUno)
+        nombreJugador1.text = String(puntosPlayerOne)
+        
+        botonJugador1.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
+        botonJugador2.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
     }
     
     @IBAction func puntajeJugador2(_ sender: UIButton) {

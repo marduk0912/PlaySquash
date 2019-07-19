@@ -13,6 +13,7 @@
 		186E399322C418E700A64CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186E399222C418E700A64CCD /* Assets.xcassets */; };
 		186E399622C418E700A64CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186E399422C418E700A64CCD /* LaunchScreen.storyboard */; };
 		186E39A022C41CDC00A64CCD /* DatosJugadoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E399F22C41CDC00A64CCD /* DatosJugadoresViewController.swift */; };
+		188CFDCC22E134A8009E1FAF /* LogicaDelPartido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CFDCB22E134A8009E1FAF /* LogicaDelPartido.swift */; };
 		18CDC77E22CD547F004C53E8 /* Partido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CDC77D22CD547F004C53E8 /* Partido.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		186E399522C418E700A64CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186E399722C418E700A64CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		186E399F22C41CDC00A64CCD /* DatosJugadoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosJugadoresViewController.swift; sourceTree = "<group>"; };
+		188CFDCB22E134A8009E1FAF /* LogicaDelPartido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicaDelPartido.swift; sourceTree = "<group>"; };
 		18CDC77D22CD547F004C53E8 /* Partido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partido.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				186E398B22C418E200A64CCD /* AppDelegate.swift */,
+				188CFDCB22E134A8009E1FAF /* LogicaDelPartido.swift */,
 				186E399F22C41CDC00A64CCD /* DatosJugadoresViewController.swift */,
 				18CDC77D22CD547F004C53E8 /* Partido.swift */,
 				186E398D22C418E200A64CCD /* ViewController.swift */,
@@ -145,6 +148,7 @@
 				186E398E22C418E200A64CCD /* ViewController.swift in Sources */,
 				186E398C22C418E200A64CCD /* AppDelegate.swift in Sources */,
 				18CDC77E22CD547F004C53E8 /* Partido.swift in Sources */,
+				188CFDCC22E134A8009E1FAF /* LogicaDelPartido.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
