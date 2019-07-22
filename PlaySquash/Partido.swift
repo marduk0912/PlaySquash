@@ -49,9 +49,9 @@ class Partido: UIViewController {
     @IBAction func puntajeJugador1(_ sender: UIButton) {
         
         puntosPlayerOne += 1
-        nombreJugador1.text = sumaDePuntos(puntosPlayerOne: puntosPlayerOne, puntosPlayerTwo: puntosPlayerTwo)
+        nombreJugador1.text = sumaDePuntos(one: puntosPlayerOne, two: puntosPlayerTwo)
         
-        resultadoGame.text = ganadorDelPartido(puntosPlayerOne: puntosPlayerOne, puntosPlayerTwo: puntosPlayerTwo, nombre: nombreUno)
+        resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerOne, puntosTwo: puntosPlayerTwo, nombre: nombreUno)
         nombreJugador1.text = String(puntosPlayerOne)
         
         botonJugador1.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
@@ -60,16 +60,13 @@ class Partido: UIViewController {
     
     @IBAction func puntajeJugador2(_ sender: UIButton) {
         puntosPlayerTwo += 1
-        if puntosPlayerTwo < 11 && puntosPlayerOne <= 9 {
-            puntosString1 = String(puntosPlayerTwo)
-            nombreJugador2.text = puntosString1
-        }else {
-            puntosString1 = String(puntosPlayerTwo)
-            nombreJugador2.text = puntosString1
-            resultadoGame.text = "El ganador es \(nombreDos)"
-            botonJugador1.isEnabled = false
-            botonJugador2.isEnabled = false
-        }
+        nombreJugador2.text = sumaDePuntos(one: puntosPlayerTwo, two: puntosPlayerOne)
+        
+        resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerTwo, puntosTwo: puntosPlayerOne, nombre: nombreDos)
+        nombreJugador2.text = String(puntosPlayerTwo)
+        
+        botonJugador1.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
+        botonJugador2.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
     }
     
     @IBAction func comenzar(_ sender: UIButton) {
@@ -79,6 +76,7 @@ class Partido: UIViewController {
         puntosPlayerTwo = 0
         nombreJugador1.text = "0"
         nombreJugador2.text = "0"
+        resultadoGame.text = ""
     }
     
 }
