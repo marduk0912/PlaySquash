@@ -49,8 +49,8 @@ class Partido: UIViewController {
     @IBAction func puntajeJugador1(_ sender: UIButton) {
         
         puntosPlayerOne += 1
-        nombreJugador1.text = sumaDePuntos(one: puntosPlayerOne, two: puntosPlayerTwo)
-        
+       
+        nombreJugador1.text = String(puntosPlayerOne)
         resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerOne, puntosTwo: puntosPlayerTwo, nombre: nombreUno)
         nombreJugador1.text = String(puntosPlayerOne)
         
@@ -60,8 +60,8 @@ class Partido: UIViewController {
     
     @IBAction func puntajeJugador2(_ sender: UIButton) {
         puntosPlayerTwo += 1
-        nombreJugador2.text = sumaDePuntos(one: puntosPlayerTwo, two: puntosPlayerOne)
         
+        nombreJugador2.text = String(puntosPlayerTwo)
         resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerTwo, puntosTwo: puntosPlayerOne, nombre: nombreDos)
         nombreJugador2.text = String(puntosPlayerTwo)
         

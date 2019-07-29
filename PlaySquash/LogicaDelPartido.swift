@@ -9,13 +9,7 @@
 import Foundation
 
 
-func sumaDePuntos (one puntos1:Int, two puntos2:Int) -> String {
-    var puntosString:String = ""
-    if puntos1 < 11 && puntos2 <= 9 {
-        puntosString = String(puntos1)
-    }
-    return puntosString
-}
+
 
 func ganadorDelPartido (puntosOne puntos1:Int, puntosTwo puntos2:Int, nombre:String) -> String {
     var resultado:String = ""
@@ -23,7 +17,7 @@ func ganadorDelPartido (puntosOne puntos1:Int, puntosTwo puntos2:Int, nombre:Str
         resultado = "El ganador es \(nombre)"
     }
     return resultado
-}
+    }
 
 func desactivarBotones (resultadoGame final:String) -> Bool{
     if final != ""{
