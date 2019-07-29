@@ -15,6 +15,8 @@ func ganadorDelPartido (puntosOne puntos1:Int, puntosTwo puntos2:Int, nombre:Str
     var resultado:String = ""
     if puntos1 == 11 && puntos2 <= 9{
         resultado = "El ganador es \(nombre)"
+    }else if puntos1 >= 10 && puntos2 >= 10 && puntos2 == (puntos1 - 2){
+        resultado = "El ganador es \(nombre)"
     }
     return resultado
     }
