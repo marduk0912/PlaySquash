@@ -16,6 +16,10 @@ class Partido: UIViewController {
     @IBOutlet weak var botonJugador2: UIButton!
     @IBOutlet weak var cantidadGames: UILabel!
     @IBOutlet weak var resultadoGame: UILabel!
+    @IBOutlet weak var izqJugadorUno: UILabel!
+    @IBOutlet weak var derJugadorUno: UILabel!
+    @IBOutlet weak var izqJugadorDos: UILabel!
+    @IBOutlet weak var derJugadorDos: UILabel!
     
 
     override var prefersStatusBarHidden: Bool{
@@ -33,6 +37,10 @@ class Partido: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        izqJugadorUno.isHidden = true
+        derJugadorUno.isHidden = true
+        izqJugadorDos.isHidden = true
+        derJugadorDos.isHidden = true
         botonJugador1.isEnabled = false
         botonJugador2.isEnabled = false
         botonJugador1.setTitle(nombreUno, for: .normal)
@@ -49,7 +57,17 @@ class Partido: UIViewController {
     @IBAction func puntajeJugador1(_ sender: UIButton) {
         
         puntosPlayerOne += 1
-       
+        
+        derJugadorDos.isHidden = true
+        izqJugadorDos.isHidden = true
+        
+        if derJugadorUno.isHidden == false{
+            self.derJugadorUno.isHidden = true
+            self.izqJugadorUno.isHidden = false
+        }else {
+            self.derJugadorUno.isHidden = false
+            self.izqJugadorUno.isHidden = true
+        }
        
         resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerOne, puntosTwo: puntosPlayerTwo, nombre: nombreUno)
         nombreJugador1.text = String(puntosPlayerOne)
@@ -61,6 +79,16 @@ class Partido: UIViewController {
     @IBAction func puntajeJugador2(_ sender: UIButton) {
         puntosPlayerTwo += 1
         
+        derJugadorUno.isHidden = true
+        izqJugadorUno.isHidden = true
+        
+        if derJugadorDos.isHidden == false{
+            self.derJugadorDos.isHidden = true
+            self.izqJugadorDos.isHidden = false
+        }else {
+            self.derJugadorDos.isHidden = false
+            self.izqJugadorDos.isHidden = true
+        }
       
         resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerTwo, puntosTwo: puntosPlayerOne, nombre: nombreDos)
         nombreJugador2.text = String(puntosPlayerTwo)
@@ -70,6 +98,12 @@ class Partido: UIViewController {
     }
     
     @IBAction func comenzar(_ sender: UIButton) {
+        
+    let alertSelectionSaque = UIAlertController(title: "Elección del saque", message: "Que jugador saca", preferredStyle: .actionSheet)
+    alertSelectionSaque.addAction(UIAlertAction(title: "Jugador uno", style: .default, handler: { (_) in self.derJugadorUno.isHidden = false}))
+    alertSelectionSaque.addAction(UIAlertAction(title: "Jugador Dos", style: .default, handler: { (_) in self.derJugadorDos.isHidden = false}))
+    self.present(alertSelectionSaque, animated: true, completion: nil)
+        
         botonJugador1.isEnabled = true
         botonJugador2.isEnabled = true
         puntosPlayerOne = 0
