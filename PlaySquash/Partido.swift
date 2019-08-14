@@ -111,6 +111,10 @@ class Partido: UIViewController {
         nombreJugador1.text = "0"
         nombreJugador2.text = "0"
         resultadoGame.text = ""
+        derJugadorUno.isHidden = true
+        derJugadorDos.isHidden = true
+        izqJugadorUno.isHidden = true
+        izqJugadorDos.isHidden = true
     }
     
 }
