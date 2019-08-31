@@ -287,7 +287,9 @@ class Partido: UIViewController {
         izqJugadorDos.isHidden = true
         continuar.isHidden = true
         juegoUno = 0
+        juegoDos = 0
         gameUno.text = String(juegoUno)
+        gameDos.text = String(juegoDos)
         continuar.setTitle("Continuar", for: .normal)
         continuar.isEnabled = true
     }
