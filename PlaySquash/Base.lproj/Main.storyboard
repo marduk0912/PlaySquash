@@ -463,6 +463,7 @@
                         <outlet property="botonJugador1" destination="t8m-Bv-xXa" id="SKE-fK-YSJ"/>
                         <outlet property="botonJugador2" destination="2va-Mn-11B" id="dxa-gL-Fmw"/>
                         <outlet property="cantidadGames" destination="Ohb-MI-dbu" id="SnV-aW-M0f"/>
+                        <outlet property="comenzar" destination="TzY-Ce-QZL" id="NNL-yD-v72"/>
                         <outlet property="continuar" destination="Yi1-ne-Z0x" id="vup-O5-vcU"/>
                         <outlet property="derJugadorDos" destination="nlO-FS-VSv" id="Lq5-67-LGk"/>
                         <outlet property="derJugadorUno" destination="pdW-jt-2sX" id="ML3-Ug-UiK"/>
@@ -481,7 +482,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="37965" width="512" height="512"/>
+        <image name="37965" width="256" height="256"/>
         <image name="Background" width="288" height="480"/>
     </resources>
 </document>

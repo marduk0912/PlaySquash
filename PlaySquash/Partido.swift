@@ -23,6 +23,7 @@ class Partido: UIViewController {
     @IBOutlet weak var gameUno: UILabel!
     @IBOutlet weak var gameDos: UILabel!
     @IBOutlet weak var continuar: UIButton!
+    @IBOutlet weak var comenzar: UIButton!
     
 
     override var prefersStatusBarHidden: Bool{
@@ -86,7 +87,8 @@ class Partido: UIViewController {
             botonJugador2.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
             
         case "3":
-                
+            
+                comenzar.isEnabled = false
                 puntosPlayerOne += 1
                 derJugadorDos.isHidden = true
                 izqJugadorDos.isHidden = true
@@ -113,9 +115,12 @@ class Partido: UIViewController {
             
                 if juegoUno == 2 {
                     continuar.isHidden = true
+                    comenzar.isEnabled = true
             }
         
         case "5":
+            
+            comenzar.isEnabled = false
             puntosPlayerOne += 1
             derJugadorDos.isHidden = true
             izqJugadorDos.isHidden = true
@@ -141,6 +146,8 @@ class Partido: UIViewController {
             continuar.isHidden = desactivarBotones(resultadoGame: resultadoGame.text!)
             
             if juegoUno == 3 {
+                
+                comenzar.isEnabled = true
                 continuar.isHidden = true
             }
         
@@ -175,6 +182,7 @@ class Partido: UIViewController {
             
         case "3":
             
+            comenzar.isEnabled = false
             puntosPlayerTwo += 1
             derJugadorUno.isHidden = true
             izqJugadorUno.isHidden = true
@@ -200,10 +208,14 @@ class Partido: UIViewController {
             continuar.isHidden = desactivarBotones(resultadoGame: resultadoGame.text!)
             
             if juegoDos == 2 {
+                
+                comenzar.isEnabled = true
                 continuar.isHidden = true
             }
             
         case "5":
+            
+            comenzar.isEnabled = false
             puntosPlayerTwo += 1
             derJugadorUno.isHidden = true
             izqJugadorUno.isHidden = true
@@ -229,6 +241,8 @@ class Partido: UIViewController {
             continuar.isHidden = desactivarBotones(resultadoGame: resultadoGame.text!)
             
             if juegoDos == 3 {
+                
+                comenzar.isEnabled = true
                 continuar.isHidden = true
             }
             
