@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DatosJugadoresViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+class DatosJugadoresViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var playerOne: UITextField!
     @IBOutlet weak var playerTwo: UITextField!
@@ -56,7 +56,7 @@ class DatosJugadoresViewController: UIViewController, UITextFieldDelegate, UIPic
         
         let category = UIPickerView()
         category.delegate = self
-        
+        category.dataSource = self
         playersCategory.inputView = category
         
         playerOne.delegate = self
@@ -72,21 +72,7 @@ class DatosJugadoresViewController: UIViewController, UITextFieldDelegate, UIPic
         playersCategory.resignFirstResponder()
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return nombreDeCategorias.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return nombreDeCategorias[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        playersCategory.text = nombreDeCategorias[row]
-    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -119,6 +105,27 @@ class DatosJugadoresViewController: UIViewController, UITextFieldDelegate, UIPic
         }
     }
     
+    
+}
+
+
+extension DatosJugadoresViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return nombreDeCategorias.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return nombreDeCategorias[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        playersCategory.text = nombreDeCategorias[row]
+    }
     
 }
 
