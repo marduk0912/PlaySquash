@@ -63,10 +63,35 @@ class DatosJugadoresViewController: UIViewController, UITextFieldDelegate {
         playerTwo.delegate = self
         playersCategory.delegate = self
         
+        crearToolBarPicker()
+        
         segment = games(control: gameSelection.selectedSegmentIndex)
       
         // Do any additional setup after loading the view.
     }
+    
+    func crearToolBarPicker() {
+        
+        let toolbar = UIToolbar()
+        toolbar.barStyle = UIBarStyle.default
+        toolbar.isTranslucent = false
+        toolbar.tintColor = .black
+        let espacio = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let botonHecho = UIBarButtonItem(title: "Aceptar", style: .plain, target: self, action: #selector(self.ocultarTeclado))
+        toolbar.isTranslucent = true
+        toolbar.setItems([espacio, botonHecho], animated: false)
+        toolbar.isUserInteractionEnabled = true
+        toolbar.sizeToFit()
+        playersCategory.inputAccessoryView = toolbar
+        
+    }
+    
+    @objc func ocultarTeclado() {
+        
+        view.endEditing(true)
+    }
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         playersCategory.resignFirstResponder()
