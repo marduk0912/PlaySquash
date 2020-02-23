@@ -24,6 +24,12 @@ class Partido: UIViewController {
     @IBOutlet weak var gameDos: UILabel!
     @IBOutlet weak var continuar: UIButton!
     @IBOutlet weak var comenzar: UIButton!
+    @IBOutlet weak var saqueJugador1: UILabel!
+    @IBOutlet weak var saqueJugador2: UILabel!
+    @IBOutlet weak var SaqueDerecha1: UIButton!
+    @IBOutlet weak var saqueIzquierda1: UIButton!
+    @IBOutlet weak var saqueDerecha2: UIButton!
+    @IBOutlet weak var saqueIzquierda2: UIButton!
     
 
     override var prefersStatusBarHidden: Bool{
@@ -284,8 +290,12 @@ class Partido: UIViewController {
     @IBAction func comenzar(_ sender: UIButton) {
         
     let alertSelectionSaque = UIAlertController(title: "Elección del saque", message: "Que jugador saca", preferredStyle: .actionSheet)
-    alertSelectionSaque.addAction(UIAlertAction(title: "Jugador uno", style: .default, handler: { (_) in self.derJugadorUno.isHidden = false}))
-    alertSelectionSaque.addAction(UIAlertAction(title: "Jugador Dos", style: .default, handler: { (_) in self.derJugadorDos.isHidden = false}))
+        
+        
+    alertSelectionSaque.addAction(UIAlertAction(title: nombreUno, style: .default, handler: { (_) in self.saqueJugador1.isHidden = false; self.SaqueDerecha1.isHidden = false; self.saqueIzquierda1.isHidden = false}))
+    alertSelectionSaque.addAction(UIAlertAction(title: nombreDos, style: .default, handler: { (_) in self.saqueJugador2.isHidden = false; self.saqueDerecha2.isHidden = false; self.saqueIzquierda2.isHidden = false}))
+        
+        
     self.present(alertSelectionSaque, animated: true, completion: nil)
         
         botonJugador1.isEnabled = true
@@ -306,6 +316,35 @@ class Partido: UIViewController {
         gameDos.text = String(juegoDos)
         continuar.setTitle("Continuar", for: .normal)
         continuar.isEnabled = true
+        comenzar.isEnabled = false
+    }
+    
+    @IBAction func derecha1(_ sender: UIButton) {
+        saqueJugador1.isHidden = true
+        SaqueDerecha1.isHidden = true
+        saqueIzquierda1.isHidden = true
+        derJugadorUno.isHidden = false
+    }
+    
+    @IBAction func izquierda1(_ sender: UIButton) {
+        saqueJugador1.isHidden = true
+        SaqueDerecha1.isHidden = true
+        saqueIzquierda1.isHidden = true
+        izqJugadorUno.isHidden = false
+    }
+    
+    @IBAction func derecha2(_ sender: UIButton) {
+        saqueJugador2.isHidden = true
+        saqueDerecha2.isHidden = true
+        saqueIzquierda2.isHidden = true
+        derJugadorDos.isHidden = false
+    }
+    
+    @IBAction func izquierda2(_ sender: UIButton) {
+        saqueJugador2.isHidden = true
+        saqueIzquierda2.isHidden = true
+        saqueDerecha2.isHidden = true
+        izqJugadorDos.isHidden = false
     }
     
 }
