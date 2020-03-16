@@ -22,9 +22,17 @@ func ganadorDelPartido (puntosOne puntos1:Int, puntosTwo puntos2:Int, nombre:Str
     }
 
 func desactivarBotones (resultadoGame final:String) -> Bool{
-    if final != ""{
+    if final != "" {
         return false
     }else {
+        return true
+    }
+}
+
+func apagarBotonesSaque (desactivar boton:Bool) -> Bool {
+    if boton == false{
+        return false
+    }else{
         return true
     }
 }

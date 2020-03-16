@@ -44,6 +44,7 @@ class Partido: UIViewController {
     var puntosString1 = ""
     var juegoUno = 0
     var juegoDos = 0
+    var ganador = ""
     
     override func viewDidLoad() {
         
@@ -74,23 +75,43 @@ class Partido: UIViewController {
         case "1":
             
             puntosPlayerOne += 1
-        
+            
             derJugadorDos.isHidden = true
             izqJugadorDos.isHidden = true
-        
-            if derJugadorUno.isHidden == false{
+           
+            if saqueJugador2.isHidden == false {
+                saqueJugador2.isHidden = true
+                saqueDerecha2.isHidden = true
+                saqueIzquierda2.isHidden = true
+            }
+            
+            if derJugadorUno.isHidden == true && izqJugadorUno.isHidden == true {
+                derJugadorUno.isHidden = true
+                izqJugadorUno.isHidden = true
+                saqueJugador1.isHidden = false
+                SaqueDerecha1.isHidden = false
+                saqueIzquierda1.isHidden = false
+                
+            }else {
+             if derJugadorUno.isHidden == false{
                 self.derJugadorUno.isHidden = true
                 self.izqJugadorUno.isHidden = false
             }else {
                 self.derJugadorUno.isHidden = false
                 self.izqJugadorUno.isHidden = true
             }
-       
+            }
+        
             resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerOne, puntosTwo: puntosPlayerTwo, nombre: nombreUno)
             nombreJugador1.text = String(puntosPlayerOne)
         
             botonJugador1.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
             botonJugador2.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
+            
+            if resultadoGame.text! == ""{
+                botonJugador1.isEnabled = apagarBotonesSaque(desactivar: saqueJugador1.isHidden)
+                botonJugador2.isEnabled = apagarBotonesSaque(desactivar: saqueJugador1.isHidden)
+            }
             
         case "3":
             
@@ -99,20 +120,36 @@ class Partido: UIViewController {
                 derJugadorDos.isHidden = true
                 izqJugadorDos.isHidden = true
                 
-                if derJugadorUno.isHidden == false{
+                
+                if derJugadorUno.isHidden == true && izqJugadorUno.isHidden == true {
+                    derJugadorUno.isHidden = true
+                    izqJugadorUno.isHidden = true
+                    saqueJugador1.isHidden = false
+                    SaqueDerecha1.isHidden = false
+                    saqueIzquierda1.isHidden = false
+                }else {
+                 if derJugadorUno.isHidden == false{
                     self.derJugadorUno.isHidden = true
                     self.izqJugadorUno.isHidden = false
                 }else {
                     self.derJugadorUno.isHidden = false
                     self.izqJugadorUno.isHidden = true
                 }
+                }
                 
                 resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerOne, puntosTwo: puntosPlayerTwo, nombre: nombreUno)
                 nombreJugador1.text = String(puntosPlayerOne)
+                ganador = resultadoGame.text!
                 
                 botonJugador1.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
                 botonJugador2.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
-                if botonJugador1.isEnabled == false {
+                
+                if resultadoGame.text! == ""{
+                    botonJugador1.isEnabled = apagarBotonesSaque(desactivar: saqueJugador1.isHidden)
+                    botonJugador2.isEnabled = apagarBotonesSaque(desactivar: saqueJugador1.isHidden)
+                }
+                
+                if ganador.contains(nombreUno) {
                     juegoUno += 1
                     gameUno.text = String(juegoUno)
                 }
@@ -131,20 +168,36 @@ class Partido: UIViewController {
             derJugadorDos.isHidden = true
             izqJugadorDos.isHidden = true
             
-            if derJugadorUno.isHidden == false{
+            
+            if derJugadorUno.isHidden == true && izqJugadorUno.isHidden == true {
+                derJugadorUno.isHidden = true
+                izqJugadorUno.isHidden = true
+                saqueJugador1.isHidden = false
+                SaqueDerecha1.isHidden = false
+                saqueIzquierda1.isHidden = false
+            }else {
+             if derJugadorUno.isHidden == false{
                 self.derJugadorUno.isHidden = true
                 self.izqJugadorUno.isHidden = false
             }else {
                 self.derJugadorUno.isHidden = false
                 self.izqJugadorUno.isHidden = true
             }
+            }
             
             resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerOne, puntosTwo: puntosPlayerTwo, nombre: nombreUno)
             nombreJugador1.text = String(puntosPlayerOne)
+            ganador =  resultadoGame.text!
             
             botonJugador1.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
             botonJugador2.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
-            if botonJugador1.isEnabled == false {
+            
+            if resultadoGame.text! == ""{
+                botonJugador1.isEnabled = apagarBotonesSaque(desactivar: saqueJugador1.isHidden)
+                botonJugador2.isEnabled = apagarBotonesSaque(desactivar: saqueJugador1.isHidden)
+            }
+            
+            if ganador.contains(nombreUno) {
                 juegoUno += 1
                 gameUno.text = String(juegoUno)
             }
@@ -172,12 +225,20 @@ class Partido: UIViewController {
             derJugadorUno.isHidden = true
             izqJugadorUno.isHidden = true
             
-            if derJugadorDos.isHidden == false{
-                self.derJugadorDos.isHidden = true
-                self.izqJugadorDos.isHidden = false
-            }else {
-                self.derJugadorDos.isHidden = false
-                self.izqJugadorDos.isHidden = true
+            if derJugadorDos.isHidden == true && izqJugadorDos.isHidden == true {
+                derJugadorDos.isHidden = true
+                izqJugadorDos.isHidden = true
+                saqueJugador2.isHidden = false
+                saqueDerecha2.isHidden = false
+                saqueIzquierda2.isHidden = false
+            }else{
+                if derJugadorDos.isHidden == false{
+                    self.derJugadorDos.isHidden = true
+                    self.izqJugadorDos.isHidden = false
+                }else {
+                    self.derJugadorDos.isHidden = false
+                    self.izqJugadorDos.isHidden = true
+                }
             }
             
             resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerTwo, puntosTwo: puntosPlayerOne, nombre: nombreDos)
@@ -185,28 +246,48 @@ class Partido: UIViewController {
             
             botonJugador1.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
             botonJugador2.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
+            
+            if resultadoGame.text! == ""{
+                botonJugador1.isEnabled = apagarBotonesSaque(desactivar: saqueJugador2.isHidden)
+                botonJugador2.isEnabled = apagarBotonesSaque(desactivar: saqueJugador2.isHidden)
+            }
             
         case "3":
             
             comenzar.isEnabled = false
             puntosPlayerTwo += 1
-            derJugadorUno.isHidden = true
+             derJugadorUno.isHidden = true
             izqJugadorUno.isHidden = true
-            
-            if derJugadorDos.isHidden == false{
-                self.derJugadorDos.isHidden = true
-                self.izqJugadorDos.isHidden = false
-            }else {
-                self.derJugadorDos.isHidden = false
-                self.izqJugadorDos.isHidden = true
-            }
+                       
+            if derJugadorDos.isHidden == true && izqJugadorDos.isHidden == true {
+                derJugadorDos.isHidden = true
+                izqJugadorDos.isHidden = true
+                saqueJugador2.isHidden = false
+                saqueDerecha2.isHidden = false
+                saqueIzquierda2.isHidden = false
+                }else{
+                    if derJugadorDos.isHidden == false{
+                        self.derJugadorDos.isHidden = true
+                        self.izqJugadorDos.isHidden = false
+                    }else {
+                        self.derJugadorDos.isHidden = false
+                        self.izqJugadorDos.isHidden = true
+                    }
+                }
             
             resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerTwo, puntosTwo: puntosPlayerOne, nombre: nombreDos)
             nombreJugador2.text = String(puntosPlayerTwo)
+            ganador =  resultadoGame.text!
             
             botonJugador1.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
             botonJugador2.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
-            if botonJugador2.isEnabled == false {
+            
+            if resultadoGame.text! == ""{
+                botonJugador1.isEnabled = apagarBotonesSaque(desactivar: saqueJugador2.isHidden)
+                botonJugador2.isEnabled = apagarBotonesSaque(desactivar: saqueJugador2.isHidden)
+            }
+            
+            if ganador.contains(nombreDos) {
                 juegoDos += 1
                 gameDos.text = String(juegoDos)
             }
@@ -225,21 +306,36 @@ class Partido: UIViewController {
             puntosPlayerTwo += 1
             derJugadorUno.isHidden = true
             izqJugadorUno.isHidden = true
-            
-            if derJugadorDos.isHidden == false{
-                self.derJugadorDos.isHidden = true
-                self.izqJugadorDos.isHidden = false
-            }else {
-                self.derJugadorDos.isHidden = false
-                self.izqJugadorDos.isHidden = true
-            }
+                       
+            if derJugadorDos.isHidden == true && izqJugadorDos.isHidden == true {
+                derJugadorDos.isHidden = true
+                izqJugadorDos.isHidden = true
+                saqueJugador2.isHidden = false
+                saqueDerecha2.isHidden = false
+                saqueIzquierda2.isHidden = false
+                }else{
+                    if derJugadorDos.isHidden == false{
+                        self.derJugadorDos.isHidden = true
+                        self.izqJugadorDos.isHidden = false
+                    }else {
+                        self.derJugadorDos.isHidden = false
+                        self.izqJugadorDos.isHidden = true
+                    }
+                }
             
             resultadoGame.text = ganadorDelPartido(puntosOne: puntosPlayerTwo, puntosTwo: puntosPlayerOne, nombre: nombreDos)
             nombreJugador2.text = String(puntosPlayerTwo)
+            ganador = resultadoGame.text!
             
             botonJugador1.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
             botonJugador2.isEnabled = desactivarBotones(resultadoGame: resultadoGame.text!)
-            if botonJugador2.isEnabled == false {
+            
+             if resultadoGame.text! == ""{
+                           botonJugador1.isEnabled = apagarBotonesSaque(desactivar: saqueJugador2.isHidden)
+                           botonJugador2.isEnabled = apagarBotonesSaque(desactivar: saqueJugador2.isHidden)
+                       }
+            
+            if ganador.contains(nombreDos) {
                 juegoDos += 1
                 gameDos.text = String(juegoDos)
             }
@@ -263,8 +359,8 @@ class Partido: UIViewController {
        
         let nuevoSaque = resultadoGame.text!.contains(nombreUno)
         continuar.isHidden = true
-        botonJugador1.isEnabled = true
-        botonJugador2.isEnabled = true
+        botonJugador1.isEnabled = false
+        botonJugador2.isEnabled = false
         puntosPlayerOne = 0
         puntosPlayerTwo = 0
         nombreJugador1.text = "0"
@@ -276,9 +372,17 @@ class Partido: UIViewController {
         izqJugadorDos.isHidden = true
         
         if nuevoSaque == true {
-            derJugadorUno.isHidden = false
+            derJugadorUno.isHidden = true
+            izqJugadorUno.isHidden = true
+            saqueJugador1.isHidden = false
+            SaqueDerecha1.isHidden = false
+            saqueIzquierda1.isHidden = false
         }else {
-            derJugadorDos.isHidden = false
+            derJugadorDos.isHidden = true
+            izqJugadorDos.isHidden = true
+            saqueJugador2.isHidden = false
+            saqueDerecha2.isHidden = false
+            saqueIzquierda2.isHidden = false
         }
     }
     
@@ -298,8 +402,6 @@ class Partido: UIViewController {
         
     self.present(alertSelectionSaque, animated: true, completion: nil)
         
-        botonJugador1.isEnabled = true
-        botonJugador2.isEnabled = true
         puntosPlayerOne = 0
         puntosPlayerTwo = 0
         nombreJugador1.text = String(puntosPlayerOne)
@@ -320,6 +422,8 @@ class Partido: UIViewController {
     }
     
     @IBAction func derecha1(_ sender: UIButton) {
+        botonJugador1.isEnabled = true
+        botonJugador2.isEnabled = true
         saqueJugador1.isHidden = true
         SaqueDerecha1.isHidden = true
         saqueIzquierda1.isHidden = true
@@ -327,6 +431,8 @@ class Partido: UIViewController {
     }
     
     @IBAction func izquierda1(_ sender: UIButton) {
+        botonJugador1.isEnabled = true
+        botonJugador2.isEnabled = true
         saqueJugador1.isHidden = true
         SaqueDerecha1.isHidden = true
         saqueIzquierda1.isHidden = true
@@ -334,6 +440,8 @@ class Partido: UIViewController {
     }
     
     @IBAction func derecha2(_ sender: UIButton) {
+        botonJugador1.isEnabled = true
+        botonJugador2.isEnabled = true
         saqueJugador2.isHidden = true
         saqueDerecha2.isHidden = true
         saqueIzquierda2.isHidden = true
@@ -341,6 +449,8 @@ class Partido: UIViewController {
     }
     
     @IBAction func izquierda2(_ sender: UIButton) {
+        botonJugador1.isEnabled = true
+        botonJugador2.isEnabled = true
         saqueJugador2.isHidden = true
         saqueIzquierda2.isHidden = true
         saqueDerecha2.isHidden = true
