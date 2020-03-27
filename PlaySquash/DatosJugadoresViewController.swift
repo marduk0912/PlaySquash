@@ -17,7 +17,7 @@ class DatosJugadoresViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var gameSelection: UISegmentedControl!
     @IBOutlet weak var aceptar: UIButton!
     
-    var nombreDeCategorias = ["Primera", "Segunda", "Tercera", "Cuarta", "Quinta", "Sexta", "Menores"]
+    var nombreDeCategorias = [NSLocalizedString("CATEGORIA_PRIMERA", comment: "CATEGORIA_PRIMERA"), NSLocalizedString("CATEGORIA_SEGUNDA", comment: "CATEGORIA_SEGUNDA"), NSLocalizedString("CATEGORIA_TERCERA", comment: "CATEGORIA_TERCERA"), NSLocalizedString("CATEGORIA_CUARTA", comment: "CATEGORIA_CUARTA"), NSLocalizedString("CATEGORIA_QUINTA", comment: "CATEGORIA_QUINTA"), NSLocalizedString("CATEGORIA_SEXTA", comment: "CATEGORIA_SEXTA"), NSLocalizedString("CATEGORIA_MENORES", comment: "CATEGORIA_MENORES")]
     
     var segment:Int = 0
   
@@ -68,6 +68,7 @@ class DatosJugadoresViewController: UIViewController, UITextFieldDelegate {
         segment = games(control: gameSelection.selectedSegmentIndex)
       
         // Do any additional setup after loading the view.
+       
     }
     
     func crearToolBarPicker() {
@@ -77,7 +78,7 @@ class DatosJugadoresViewController: UIViewController, UITextFieldDelegate {
         toolbar.isTranslucent = false
         toolbar.tintColor = .black
         let espacio = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let botonHecho = UIBarButtonItem(title: "Aceptar", style: .plain, target: self, action: #selector(self.ocultarTeclado))
+        let botonHecho = UIBarButtonItem(title: "Ok", style: .plain, target: self, action: #selector(self.ocultarTeclado))
         toolbar.isTranslucent = true
         toolbar.setItems([espacio, botonHecho], animated: false)
         toolbar.isUserInteractionEnabled = true
@@ -109,7 +110,8 @@ class DatosJugadoresViewController: UIViewController, UITextFieldDelegate {
             let partido = segue.destination as! Partido
             partido.nombreUno = playerOne.text!
             partido.nombreDos = playerTwo.text!
-            partido.mejorDeGames = String (segment)
+            partido.mejorDeGames = NSLocalizedString("MEJOR_GAMES", comment: "MEJOR_GAMES") + String (segment) + " games"
+            partido.games = String (segment)
             
         }
      
@@ -119,7 +121,7 @@ class DatosJugadoresViewController: UIViewController, UITextFieldDelegate {
         if playerOne.text == "" || playerTwo.text == "" || playersCategory.text == ""{
             
             // create the alert
-            let alert = UIAlertController(title: "ERROR", message: "Todos los campos deben estar completos", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "ERROR", message: NSLocalizedString("CAMPOS_DATOS", comment: "CAMPOS_DATOS"), preferredStyle: UIAlertController.Style.alert)
             
             // add an action (button)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))

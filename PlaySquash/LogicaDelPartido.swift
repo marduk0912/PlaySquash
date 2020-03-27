@@ -12,13 +12,19 @@ import Foundation
 
 
 func ganadorDelPartido (puntosOne puntos1:Int, puntosTwo puntos2:Int, nombre:String) -> String {
+    var resultado1:String = ""
     var resultado:String = ""
+    var resultadoFinal:String = ""
     if puntos1 == 11 && puntos2 <= 9{
-        resultado = "El ganador es \(nombre)"
+        resultado = NSLocalizedString("GANADOR_PARTIDO", comment: "GANADOR_PARTIDO")
+        resultado1 = nombre
+        resultadoFinal = resultado + resultado1
     }else if puntos1 >= 10 && puntos2 >= 10 && puntos2 == (puntos1 - 2){
-        resultado = "El ganador es \(nombre)"
+        resultado = NSLocalizedString("GANADOR_PARTIDO", comment: "GANADOR_PARTIDO")
+        resultado1 = nombre
+        resultadoFinal = resultado + resultado1
     }
-    return resultado
+    return resultadoFinal
     }
 
 func desactivarBotones (resultadoGame final:String) -> Bool{

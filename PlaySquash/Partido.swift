@@ -39,6 +39,7 @@ class Partido: UIViewController {
     var nombreUno:String = ""
     var nombreDos:String = ""
     var mejorDeGames:String = ""
+    var games:String = ""
     var puntosPlayerOne = 0
     var puntosPlayerTwo = 0
     var puntosString1 = ""
@@ -57,10 +58,11 @@ class Partido: UIViewController {
         botonJugador2.isEnabled = false
         botonJugador1.setTitle(nombreUno, for: .normal)
         botonJugador2.setTitle(nombreDos, for: .normal)
-        cantidadGames.text = "Mejor de \(mejorDeGames) games"
+        cantidadGames.text = mejorDeGames
         gameUno.text = String(juegoUno)
         gameDos.text = String(juegoDos)
        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func volver(_ sender: UIButton) {
@@ -70,7 +72,7 @@ class Partido: UIViewController {
     
     @IBAction func puntajeJugador1(_ sender: UIButton) {
         
-        switch mejorDeGames {
+        switch games {
         
         case "1":
             
@@ -216,7 +218,7 @@ class Partido: UIViewController {
     }
     
     @IBAction func puntajeJugador2(_ sender: UIButton) {
-        switch mejorDeGames {
+        switch games {
             
         case "1":
             
@@ -354,6 +356,7 @@ class Partido: UIViewController {
     }
     
     
+    
     @IBAction func continuar(_ sender: UIButton) {
         
        
@@ -393,7 +396,7 @@ class Partido: UIViewController {
     
     @IBAction func comenzar(_ sender: UIButton) {
         
-    let alertSelectionSaque = UIAlertController(title: "Elección del saque", message: "Que jugador saca", preferredStyle: .actionSheet)
+    let alertSelectionSaque = UIAlertController(title: NSLocalizedString("ELECCION_SAQUE", comment: "ELECCION_SAQUE"), message: NSLocalizedString("JUGADOR_SAQUE", comment: "JUGADOR_SAQUE"), preferredStyle: .actionSheet)
         
         
     alertSelectionSaque.addAction(UIAlertAction(title: nombreUno, style: .default, handler: { (_) in self.saqueJugador1.isHidden = false; self.SaqueDerecha1.isHidden = false; self.saqueIzquierda1.isHidden = false}))
@@ -416,7 +419,7 @@ class Partido: UIViewController {
         juegoDos = 0
         gameUno.text = String(juegoUno)
         gameDos.text = String(juegoDos)
-        continuar.setTitle("Continuar", for: .normal)
+        continuar.setTitle(NSLocalizedString("CONTINUAR", comment: "CONTINUAR"), for: .normal)
         continuar.isEnabled = true
         comenzar.isEnabled = false
     }
