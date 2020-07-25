@@ -29,32 +29,35 @@
                                     <segue destination="ks8-i7-7HB" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="xo3-yB-2aU"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4Y-AO-hxg">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jZ-vd-zzb" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="kOh-zV-CRt"/>
+                                    <constraint firstAttribute="height" constant="50" id="FwR-q6-rmN"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="I4Y-AO-hxg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="02N-w5-BcT"/>
                             <constraint firstItem="BV7-Ur-76l" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3yH-I4-wrs"/>
                             <constraint firstAttribute="bottom" secondItem="BV7-Ur-76l" secondAttribute="bottom" id="BEu-R4-UTd"/>
-                            <constraint firstItem="I4Y-AO-hxg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GQ1-Ly-n6Q"/>
-                            <constraint firstItem="I4Y-AO-hxg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SmU-5y-8jg"/>
+                            <constraint firstItem="6jZ-vd-zzb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Tfn-xk-zIm"/>
+                            <constraint firstItem="6jZ-vd-zzb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uuz-aG-cy9"/>
                             <constraint firstItem="0KE-5D-yv7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YFV-Pp-kO9"/>
                             <constraint firstItem="BV7-Ur-76l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jQK-qv-aHH"/>
                             <constraint firstItem="0KE-5D-yv7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oJJ-3v-k4Q"/>
                             <constraint firstItem="BV7-Ur-76l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s4Y-cd-h0v"/>
+                            <constraint firstItem="6jZ-vd-zzb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xXZ-Ei-Rsg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="banner" destination="6jZ-vd-zzb" id="F3P-HT-KF1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.199999999999999" y="57.121439280359823"/>
+            <point key="canvasLocation" x="36" y="56"/>
         </scene>
         <!--Datos Jugadores View Controller-->
         <scene sceneID="6k2-zh-Bg7">

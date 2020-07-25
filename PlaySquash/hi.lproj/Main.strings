@@ -1,48 +1,48 @@
 
 /* Class = "UIButton"; normalTitle = "New"; ObjectID = "0KE-5D-yv7"; */
-"0KE-5D-yv7.normalTitle" = "New";
+"0KE-5D-yv7.normalTitle" = "नया";
 
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "0j7-A8-dWr"; */
 "0j7-A8-dWr.normalTitle" = "Cancel";
 
 /* Class = "UIButton"; normalTitle = "Right"; ObjectID = "1kQ-Do-1Zf"; */
-"1kQ-Do-1Zf.normalTitle" = "Right";
+"1kQ-Do-1Zf.normalTitle" = "सही";
 
 /* Class = "UIButton"; normalTitle = "Left"; ObjectID = "6AY-Pb-AID"; */
-"6AY-Pb-AID.normalTitle" = "Left";
+"6AY-Pb-AID.normalTitle" = "बाएं";
 
 /* Class = "UILabel"; text = "Service"; ObjectID = "6Z4-wu-eya"; */
-"6Z4-wu-eya.text" = "Service";
+"6Z4-wu-eya.text" = "सर्विस";
 
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "CE0-ZN-UNR"; */
-"CE0-ZN-UNR.normalTitle" = "Back";
+"CE0-ZN-UNR.normalTitle" = "वापसी";
 
 /* Class = "UILabel"; text = "Lef"; ObjectID = "Dxg-IO-kBc"; */
-"Dxg-IO-kBc.text" = "Lef";
+"Dxg-IO-kBc.text" = "बाएं";
 
 /* Class = "UILabel"; text = "Player 1"; ObjectID = "FmG-Si-4hh"; */
-"FmG-Si-4hh.text" = "Player 1";
+"FmG-Si-4hh.text" = "खिलाड़ी १";
 
 /* Class = "UIButton"; normalTitle = "Left"; ObjectID = "Hu2-12-OWM"; */
-"Hu2-12-OWM.normalTitle" = "Left";
+"Hu2-12-OWM.normalTitle" = "बाएं";
 
 /* Class = "UIButton"; normalTitle = "Right"; ObjectID = "P9t-pV-7x5"; */
-"P9t-pV-7x5.normalTitle" = "Right";
+"P9t-pV-7x5.normalTitle" = "सही";
 
 /* Class = "UITextField"; placeholder = "Category"; ObjectID = "Pkl-K7-zX9"; */
-"Pkl-K7-zX9.placeholder" = "Category";
+"Pkl-K7-zX9.placeholder" = "वर्ग";
 
 /* Class = "UITextField"; placeholder = "Player 1"; ObjectID = "T3h-gR-55W"; */
-"T3h-gR-55W.placeholder" = "Player 1";
+"T3h-gR-55W.placeholder" = "खिलाड़ी १";
 
 /* Class = "UIButton"; normalTitle = "Start"; ObjectID = "TzY-Ce-QZL"; */
-"TzY-Ce-QZL.normalTitle" = "Start";
+"TzY-Ce-QZL.normalTitle" = "शुरू";
 
 /* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "Yi1-ne-Z0x"; */
-"Yi1-ne-Z0x.normalTitle" = "Continue";
+"Yi1-ne-Z0x.normalTitle" = "जारी रखें";
 
 /* Class = "UILabel"; text = "Service"; ObjectID = "afo-u9-RNR"; */
-"afo-u9-RNR.text" = "Service";
+"afo-u9-RNR.text" = "सर्विस";
 
 /* Class = "UISegmentedControl"; bRL-Kz-iGh.segmentTitles[0] = "Simple Game"; ObjectID = "bRL-Kz-iGh"; */
 "bRL-Kz-iGh.segmentTitles[0]" = "Simple Game";
@@ -54,22 +54,22 @@
 "bRL-Kz-iGh.segmentTitles[2]" = "Best 5 Games";
 
 /* Class = "UILabel"; text = "Player 2"; ObjectID = "btr-st-4Vr"; */
-"btr-st-4Vr.text" = "Player 2";
+"btr-st-4Vr.text" = "खिलाड़ी २";
 
-/* Class = "UILabel"; text = "Rig"; ObjectID = "nlO-FS-VSv"; */
-"nlO-FS-VSv.text" = "Rig";
+/* Class = "UILabel"; text = "rig"; ObjectID = "nlO-FS-VSv"; */
+"nlO-FS-VSv.text" = "सही";
 
 /* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "oHs-fd-YXh"; */
 "oHs-fd-YXh.normalTitle" = "Ok";
 
 /* Class = "UILabel"; text = "Category"; ObjectID = "oIm-xx-ITJ"; */
-"oIm-xx-ITJ.text" = "Category";
+"oIm-xx-ITJ.text" = "वर्ग";
 
 /* Class = "UILabel"; text = "Rig"; ObjectID = "pdW-jt-2sX"; */
-"pdW-jt-2sX.text" = "Rig";
+"pdW-jt-2sX.text" = "सही";
 
 /* Class = "UILabel"; text = "Lef"; ObjectID = "tOT-77-jWd"; */
-"tOT-77-jWd.text" = "Lef";
+"tOT-77-jWd.text" = "बाएं";
 
 /* Class = "UITextField"; placeholder = "Player 2"; ObjectID = "z6K-X6-7FG"; */
-"z6K-X6-7FG.placeholder" = "Player 2";
+"z6K-X6-7FG.placeholder" = "खिलाड़ी २";

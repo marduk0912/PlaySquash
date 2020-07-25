@@ -1,0 +1,75 @@
+
+/* Class = "UIButton"; normalTitle = "New"; ObjectID = "0KE-5D-yv7"; */
+"0KE-5D-yv7.normalTitle" = "Nowy";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "0j7-A8-dWr"; */
+"0j7-A8-dWr.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Right"; ObjectID = "1kQ-Do-1Zf"; */
+"1kQ-Do-1Zf.normalTitle" = "Dobrze";
+
+/* Class = "UIButton"; normalTitle = "Left"; ObjectID = "6AY-Pb-AID"; */
+"6AY-Pb-AID.normalTitle" = "Lewo";
+
+/* Class = "UILabel"; text = "Service"; ObjectID = "6Z4-wu-eya"; */
+"6Z4-wu-eya.text" = "Usługa";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "CE0-ZN-UNR"; */
+"CE0-ZN-UNR.normalTitle" = "Powrót";
+
+/* Class = "UILabel"; text = "Lef"; ObjectID = "Dxg-IO-kBc"; */
+"Dxg-IO-kBc.text" = "Lew";
+
+/* Class = "UILabel"; text = "Player 1"; ObjectID = "FmG-Si-4hh"; */
+"FmG-Si-4hh.text" = "Gracz 1";
+
+/* Class = "UIButton"; normalTitle = "Left"; ObjectID = "Hu2-12-OWM"; */
+"Hu2-12-OWM.normalTitle" = "Lewo";
+
+/* Class = "UIButton"; normalTitle = "Right"; ObjectID = "P9t-pV-7x5"; */
+"P9t-pV-7x5.normalTitle" = "Dobrze";
+
+/* Class = "UITextField"; placeholder = "Category"; ObjectID = "Pkl-K7-zX9"; */
+"Pkl-K7-zX9.placeholder" = "Kategoria";
+
+/* Class = "UITextField"; placeholder = "Player 1"; ObjectID = "T3h-gR-55W"; */
+"T3h-gR-55W.placeholder" = "Gracz 1";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "TzY-Ce-QZL"; */
+"TzY-Ce-QZL.normalTitle" = "Początek";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "Yi1-ne-Z0x"; */
+"Yi1-ne-Z0x.normalTitle" = "Kontyntynuj";
+
+/* Class = "UILabel"; text = "Service"; ObjectID = "afo-u9-RNR"; */
+"afo-u9-RNR.text" = "Usługa";
+
+/* Class = "UISegmentedControl"; bRL-Kz-iGh.segmentTitles[0] = "Simple Game"; ObjectID = "bRL-Kz-iGh"; */
+"bRL-Kz-iGh.segmentTitles[0]" = "Simple Game";
+
+/* Class = "UISegmentedControl"; bRL-Kz-iGh.segmentTitles[1] = "Best 3 Games"; ObjectID = "bRL-Kz-iGh"; */
+"bRL-Kz-iGh.segmentTitles[1]" = "Best 3 Games";
+
+/* Class = "UISegmentedControl"; bRL-Kz-iGh.segmentTitles[2] = "Best 5 Games"; ObjectID = "bRL-Kz-iGh"; */
+"bRL-Kz-iGh.segmentTitles[2]" = "Best 5 Games";
+
+/* Class = "UILabel"; text = "Player 2"; ObjectID = "btr-st-4Vr"; */
+"btr-st-4Vr.text" = "Gracz 2";
+
+/* Class = "UILabel"; text = "rig"; ObjectID = "nlO-FS-VSv"; */
+"nlO-FS-VSv.text" = "Dob";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "oHs-fd-YXh"; */
+"oHs-fd-YXh.normalTitle" = "Ok";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "oIm-xx-ITJ"; */
+"oIm-xx-ITJ.text" = "Kategoria";
+
+/* Class = "UILabel"; text = "Rig"; ObjectID = "pdW-jt-2sX"; */
+"pdW-jt-2sX.text" = "Dob";
+
+/* Class = "UILabel"; text = "Lef"; ObjectID = "tOT-77-jWd"; */
+"tOT-77-jWd.text" = "Lew";
+
+/* Class = "UITextField"; placeholder = "Player 2"; ObjectID = "z6K-X6-7FG"; */
+"z6K-X6-7FG.placeholder" = "Gracz 2";

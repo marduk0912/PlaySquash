@@ -16,23 +16,37 @@
 		188CFDCC22E134A8009E1FAF /* LogicaDelPartido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CFDCB22E134A8009E1FAF /* LogicaDelPartido.swift */; };
 		18BA6EDE242D7CE10058D385 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18BA6EE0242D7CE10058D385 /* Localizable.strings */; };
 		18CDC77E22CD547F004C53E8 /* Partido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CDC77D22CD547F004C53E8 /* Partido.swift */; };
+		9D92F3CC348D5BCFF7924493 /* Pods_PlaySquash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7AEAA40C7BDD1BE4460132 /* Pods_PlaySquash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14BEC40010B396163363F694 /* Pods-PlaySquash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaySquash.release.xcconfig"; path = "Target Support Files/Pods-PlaySquash/Pods-PlaySquash.release.xcconfig"; sourceTree = "<group>"; };
+		1817DEBD24CC80A50093A1FB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1817DEC124CC81510093A1FB /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1817DEC324CC81B20093A1FB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18454D2924CCE2360038E26E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		18454D2A24CCE2370038E26E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18454D2B24CCE2770038E26E /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
+		18454D2C24CCE2780038E26E /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		186E398822C418E200A64CCD /* PlaySquash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaySquash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186E398B22C418E200A64CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186E398D22C418E200A64CCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		186E399022C418E200A64CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		186E399222C418E700A64CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186E399522C418E700A64CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186E399722C418E700A64CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		186E399F22C41CDC00A64CCD /* DatosJugadoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosJugadoresViewController.swift; sourceTree = "<group>"; };
 		188CFDCB22E134A8009E1FAF /* LogicaDelPartido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicaDelPartido.swift; sourceTree = "<group>"; };
-		18BA6EDA242D7C7A0058D385 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
-		18BA6EDB242D7C930058D385 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		1899E00A24CCB7F00080D391 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-419"; path = "es-419.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		1899E00B24CCB7F10080D391 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1899E00C24CCB7F10080D391 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "pt-BR"; path = "pt-BR.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		1899E00D24CCB7F10080D391 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1899E00E24CCB7F20080D391 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1899E01124CCC0F80080D391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18BA6EDF242D7CE10058D385 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18BA6EE1242D7CE60058D385 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		18CDC77D22CD547F004C53E8 /* Partido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partido.swift; sourceTree = "<group>"; };
+		6D7AEAA40C7BDD1BE4460132 /* Pods_PlaySquash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaySquash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE938243ACC2B7266CA503B2 /* Pods-PlaySquash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaySquash.debug.xcconfig"; path = "Target Support Files/Pods-PlaySquash/Pods-PlaySquash.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D92F3CC348D5BCFF7924493 /* Pods_PlaySquash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +66,8 @@
 			children = (
 				186E398A22C418E200A64CCD /* PlaySquash */,
 				186E398922C418E200A64CCD /* Products */,
+				F53BE7C39C2A0B5C9AC86128 /* Pods */,
+				ECA289255947474E213E7A48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +96,24 @@
 			path = PlaySquash;
 			sourceTree = "<group>";
 		};
+		ECA289255947474E213E7A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D7AEAA40C7BDD1BE4460132 /* Pods_PlaySquash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F53BE7C39C2A0B5C9AC86128 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE938243ACC2B7266CA503B2 /* Pods-PlaySquash.debug.xcconfig */,
+				14BEC40010B396163363F694 /* Pods-PlaySquash.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 186E399A22C418E700A64CCD /* Build configuration list for PBXNativeTarget "PlaySquash" */;
 			buildPhases = (
+				32CD1E6CD6B9DCC55D2C9A36 /* [CP] Check Pods Manifest.lock */,
 				186E398422C418E100A64CCD /* Sources */,
 				186E398522C418E100A64CCD /* Frameworks */,
 				186E398622C418E100A64CCD /* Resources */,
+				060AB63DE45E2000BD5C180D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +159,11 @@
 				en,
 				Base,
 				"es-419",
+				"pt-BR",
+				it,
+				fr,
+				pl,
+				hi,
 			);
 			mainGroup = 186E397F22C418E100A64CCD;
 			productRefGroup = 186E398922C418E200A64CCD /* Products */;
@@ -147,6 +189,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		060AB63DE45E2000BD5C180D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaySquash/Pods-PlaySquash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaySquash/Pods-PlaySquash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlaySquash/Pods-PlaySquash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32CD1E6CD6B9DCC55D2C9A36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaySquash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		186E398422C418E100A64CCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -166,9 +250,14 @@
 		186E398F22C418E200A64CCD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				186E399022C418E200A64CCD /* Base */,
-				18BA6EDA242D7C7A0058D385 /* es-419 */,
-				18BA6EDB242D7C930058D385 /* en */,
+				1899E00A24CCB7F00080D391 /* es-419 */,
+				1899E00B24CCB7F10080D391 /* en */,
+				1899E00C24CCB7F10080D391 /* pt-BR */,
+				1899E00D24CCB7F10080D391 /* it */,
+				1899E00E24CCB7F20080D391 /* fr */,
+				1899E01124CCC0F80080D391 /* Base */,
+				18454D2924CCE2360038E26E /* pl */,
+				18454D2B24CCE2770038E26E /* hi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -186,6 +275,11 @@
 			children = (
 				18BA6EDF242D7CE10058D385 /* en */,
 				18BA6EE1242D7CE60058D385 /* es-419 */,
+				1817DEBD24CC80A50093A1FB /* pt-BR */,
+				1817DEC124CC81510093A1FB /* it */,
+				1817DEC324CC81B20093A1FB /* fr */,
+				18454D2A24CCE2370038E26E /* pl */,
+				18454D2C24CCE2780038E26E /* hi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -313,6 +407,7 @@
 		};
 		186E399B22C418E700A64CCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE938243ACC2B7266CA503B2 /* Pods-PlaySquash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,7 +418,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "marduk-mza0912.SquashScore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -333,6 +428,7 @@
 		};
 		186E399C22C418E700A64CCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BEC40010B396163363F694 /* Pods-PlaySquash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -343,7 +439,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "marduk-mza0912.SquashScore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

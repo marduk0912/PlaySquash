@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  PlaySquash
+
+  Created by Fernando on 26/03/2020.
+  Copyright © 2020 Fernando Salvador. All rights reserved.
+*/
+
+"CATEGORIA_PRIMERA" = "Pierwszy";
+"CATEGORIA_SEGUNDA" = "Druga";
+"CATEGORIA_TERCERA" = "Trzeci";
+"CATEGORIA_CUARTA" = "Jedna czwarta";
+"CATEGORIA_QUINTA" = "Piąty";
+"CATEGORIA_SEXTA" = "Szósty";
+"CATEGORIA_MENORES" = "Nieletni";
+
+"CAMPOS_DATOS" = "Wszystkie pola muszą być wypełnione";
+"MEJOR_GAMES" = "Najlepsze ";
+
+"ELECCION_SAQUE" = "Wybór serwowania";
+"JUGADOR_SAQUE" = "Który gracz służy";
+
+"CONTINUAR" = "Kontyntynuj";
+"GANADOR_PARTIDO" = "Zwycięzcą jest ";
