@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        banner.adUnitID = "ca-app-pub-9116099785246857/6121428989"
+        banner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         banner.rootViewController = self
         banner.load(GADRequest())
         // Do any additional setup after loading the view.
